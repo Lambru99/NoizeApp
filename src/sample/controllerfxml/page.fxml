@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #F5E6E6;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllerfxml.controller">
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="196.0" style="-fx-background-color: #F4F4F4;">
+         <children>
+            <GridPane prefHeight="400.0" prefWidth="200.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Button fx:id="one" mnemonicParsing="false" onAction="#PlayOne" prefWidth="400.0" style="-fx-background-color: #F4F4F4;" text="Waterfall in a forest" />
+                  <Button fx:id="two" mnemonicParsing="false" onAction="#PlayTwo" prefWidth="400.0" style="-fx-background-color: #F4F4F4;" text="Thunderstorm &amp; Rains" GridPane.rowIndex="1" />
+                  <Button fx:id="three" mnemonicParsing="false" onAction="#PlayThree" prefWidth="400.0" style="-fx-background-color: #F4F4F4;" text="Cafe Music" GridPane.rowIndex="2" />
+                  <Button fx:id="four" mnemonicParsing="false" onAction="#PlayFour" prefWidth="400.0" style="-fx-background-color: #F4F4F4;" text="Brown Noise" GridPane.rowIndex="3" />
+                  <Button fx:id="five" mnemonicParsing="false" onAction="#PlayFive" prefWidth="400.0" style="-fx-background-color: #F4F4F4;" text="Rainy Day" GridPane.rowIndex="4" />
+                  <Button fx:id="six" mnemonicParsing="false" onAction="#PlaySix" prefWidth="400.0" style="-fx-background-color: #F4F4F4;" text="Medieval Town" GridPane.rowIndex="5" />
+                  <Button fx:id="seven" mnemonicParsing="false" onAction="#PlaySeven" prefWidth="400.0" style="-fx-background-color: #F4F4F4;" text="Celestial Noise" GridPane.rowIndex="6" />
+                  <Button fx:id="eight" mnemonicParsing="false" onAction="#PlayEight" prefWidth="400.0" style="-fx-background-color: #F4F4F4;" text="Metropolis Soundscape" GridPane.rowIndex="7" />
+                  <Button fx:id="nine" mnemonicParsing="false" onAction="#PlayNine" prefWidth="400.0" style="-fx-background-color: #F4F4F4;" text="Snowy Blizzard" GridPane.rowIndex="8" />
+                  <Button fx:id="ten" mnemonicParsing="false" onAction="#PlayTen" prefWidth="400.0" style="-fx-background-color: #F4F4F4;" text="Forest Ambience" GridPane.rowIndex="9" />
+               </children>
+            </GridPane>
+         </children>
+      </AnchorPane>
+      <Label fx:id="label" layoutX="348.0" layoutY="297.0" prefHeight="17.0" prefWidth="200.0" />
+      <GridPane layoutX="348.0" layoutY="314.0" prefHeight="51.0" prefWidth="150.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="play" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#play" prefHeight="33.0" prefWidth="74.0" style="-fx-background-color: #F5E6E6;" />
+            <Button fx:id="pause" mnemonicParsing="false" onAction="#pause" prefHeight="33.0" prefWidth="75.0" style="-fx-background-color: #F5E6E6;" GridPane.columnIndex="1" />
+            <ImageView disable="true" fitHeight="55.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../image/icons8-play-64.png" />
+               </image>
+            </ImageView>
+            <ImageView disable="true" fitHeight="61.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+               <image>
+                  <Image url="@../../image/icons8-pause-64.png" />
+               </image>
+            </ImageView>
+         </children>
+      </GridPane>
+      <ImageView fx:id="img" fitHeight="214.0" fitWidth="353.0" layoutX="233.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>
